@@ -1,0 +1,132 @@
+{
+    "list": [
+        { "name": "Brunei", "coord": { "lat": 4.5, "lon": 114.6667 } },
+        { "name": "Cambodia", "coord": { "lat": 13, "lon": 105 } },
+        { "name": "Indonesia", "coord": { "lat": -5, "lon": 120 } },
+        { "name": "Laos", "coord": { "lat": 18, "lon": 105 } },
+        { "name": "Malaysia", "coord": { "lat": 4.2105, "lon": 101.9758 } },
+        { "name": "Myanmar", "coord": { "lat": 22, "lon": 98 } },
+        { "name": "Philippines", "coord": { "lat": 13, "lon": 122 } },
+        { "name": "Singapore", "coord": { "lat": 1.2897, "lon": 103.8501 } },
+        { "name": "Thailand", "coord": { "lat": 15, "lon": 100 } },
+        { "name": "Timor-Leste", "coord": { "lat": -8.8333, "lon": 125.75 } },
+        { "name": "Vietnam", "coord": { "lat": 21.0245, "lon": 105.8412 } },
+
+        { "name": "China", "coord": { "lat": 35, "lon": 105 } },
+        { "name": "Japan", "coord": { "lat": 35.6854, "lon": 139.7531 } },
+        { "name": "Mongolia", "coord": { "lat": 46, "lon": 105 } },
+        { "name": "North Korea", "coord": { "lat": 40, "lon": 127 } },
+        { "name": "South Korea", "coord": { "lat": 36, "lon": 128 } },
+
+        { "name": "Bangladesh", "coord": { "lat": 24, "lon": 90 } },
+        { "name": "Bhutan", "coord": { "lat": 27.5, "lon": 90.5 } },
+        { "name": "India", "coord": { "lat": 20, "lon": 77 } },
+        { "name": "Iran", "coord": { "lat": 32, "lon": 53 } },
+        { "name": "Nepal", "coord": { "lat": 28, "lon": 84 } },
+        { "name": "Pakistan", "coord": { "lat": 30, "lon": 70 } },
+
+        { "name": "Kazakhstan", "coord": { "lat": 48, "lon": 68 } },
+        { "name": "Kyrgyzstan", "coord": { "lat": 41, "lon": 75 } },
+        { "name": "Turkmenistan", "coord": { "lat": 40, "lon": 60 } },
+        { "name": "Uzbekistan", "coord": { "lat": 41.7075, "lon": 41.7075 } },
+
+        { "name": "Iraq", "coord": { "lat": 33, "lon": 44 } },
+        { "name": "Israel", "coord": { "lat": 31.5, "lon": 34.75 } },
+        { "name": "Oman", "coord": { "lat": 21, "lon": 57 } },
+        { "name": "Qatar", "coord": { "lat": 25.5, "lon": 51.25 } },
+        { "name": "Saudi Arabia", "coord": { "lat": 25, "lon": 45 } },
+        { "name": "Yemen", "coord": { "lat": 15.5, "lon": 47.5 } },
+
+
+
+        { "name": "Denmark", "coord": { "lat": 56, "lon": 10 } },
+        { "name": "Finland", "coord": { "lat": 64, "lon": 26 } },
+        { "name": "Iceland", "coord": { "lat": 65, "lon": -18 } },
+        { "name": "Ireland", "coord": { "lat": 53, "lon": -8 } },
+        { "name": "Norway", "coord": { "lat": 62, "lon": 10 } },
+        { "name": "Sweden", "coord": { "lat": 65, "lon": 17 } },
+        { "name": "United Kingdom", "coord": { "lat": 55.3781, "lon": -3.4360 } },
+
+        { "name": "Belarus", "coord": { "lat": 53, "lon": 28 } },
+        { "name": "Bulgaria", "coord": { "lat": 43, "lon": 25 } },
+        { "name": "Hungary", "coord": { "lat": 47, "lon": 20 } },
+        { "name": "Poland", "coord": { "lat": 52, "lon": 20 } },
+        { "name": "Romania", "coord": { "lat": 46, "lon": 25 } },
+        { "name": "Russia", "coord": { "lat": 60.7558, "lon": 100.6173 } },
+        { "name": "Ukraine", "coord": { "lat": 49, "lon": 32 } },
+
+        { "name": "Greece", "coord": { "lat": 39, "lon": 22 } },
+        { "name": "Italy", "coord": { "lat": 42.8333, "lon": 12.8333 } },
+        { "name": "Spain", "coord": { "lat": 40, "lon": -4 } },
+
+        { "name": "Austria", "coord": { "lat": 47.3333, "lon": 13.3333 } },
+        { "name": "France", "coord": { "lat": 46, "lon": 2 } },
+        { "name": "Germany", "coord": { "lat": 51.5, "lon": 10.5 } },
+
+
+
+        { "name": "Greenland", "coord": { "lat": 72, "lon": -40 } },
+        { "name": "Puerto Rico", "coord": { "lat": 18.2483, "lon": -66.4999 } },
+
+
+
+        { "name": "Canada", "coord": { "lat": 56.1304, "lon": -106.3468 } },
+        { "name": "United States", "coord": { "lat": 37.0902, "lon": -95.7129 } },
+
+        { "name": "Cuba", "coord": { "lat": 22, "lon": -79.5 } },
+
+        { "name": "Guatemala", "coord": { "lat": 14.6407, "lon": -90.5133 } },
+        { "name": "Mexico", "coord": { "lat": 19.4285, "lon": -99.1277 } },
+        { "name": "Nicaragua", "coord": { "lat": 13, "lon": -85 } },
+
+        { "name": "Argentina", "coord": { "lat": -34, "lon": -64 } },
+        { "name": "Bolivia", "coord": { "lat": -17, "lon": -65 } },
+        { "name": "Brazil", "coord": { "lat": -10, "lon": -55 } },
+        { "name": "Chile", "coord": { "lat": -30, "lon": -71 } },
+        { "name": "Colombia", "coord": { "lat": 3.3761, "lon": -74.8015 } },
+        { "name": "Peru", "coord": { "lat": -10, "lon": -75 } },
+        { "name": "Venezuela", "coord": { "lat": 8, "lon": -66 } },
+
+
+
+        { "name": "Australia", "coord": { "lat": -25, "lon": 135 } },
+        { "name": "New Zealand", "coord": { "lat": -42, "lon": 174 } },
+        { "name": "Papua New Guinea", "coord": { "lat": -6, "lon": 147 } },
+
+
+
+        { "name": "Algeria", "coord": { "lat": 28.0339, "lon": 1.6596 } },
+        { "name": "Egypt", "coord": { "lat": 26.8206, "lon": 30.8025 } },
+        { "name": "Libya", "coord": { "lat": 26.3351, "lon": 17.2283 } },
+        { "name": "Morocco", "coord": { "lat": 31.7917, "lon": -7.0926 } },
+        { "name": "Tunisia", "coord": { "lat": 33.8869, "lon": 9.5375 } },
+        { "name": "Namibia", "coord": { "lat": -22.9576, "lon": 18.4904 } },
+        { "name": "South Africa", "coord": { "lat": -30.5595, "lon": 22.9375 } },
+        { "name": "Comoros", "coord": { "lat": -11.6455, "lon": 43.3333 } },
+        { "name": "Djibouti", "coord": { "lat": 11.8251, "lon": 42.5903 } },
+        { "name": "Eritrea", "coord": { "lat": 15.1794, "lon": 39.7823 } },
+        { "name": "Ethiopia", "coord": { "lat": 9.145, "lon": 40.4897 } },
+        { "name": "Kenya", "coord": { "lat": -1.286389, "lon": 36.8172 } },
+        { "name": "Madagascar", "coord": { "lat": -18.7669, "lon": 46.8691 } },
+        { "name": "Mauritius", "coord": { "lat": -20.3484, "lon": 57.5522 } },
+        { "name": "Seychelles", "coord": { "lat": -4.6796, "lon": 55.492 } },
+        { "name": "Somalia", "coord": { "lat": 5.1521, "lon": 46.1996 } },
+        { "name": "Tanzania", "coord": { "lat": -6.369, "lon": 34.8888 } },
+        { "name": "Zambia", "coord": { "lat": -13.1339, "lon": 27.8493 } },
+        { "name": "Zimbabwe", "coord": { "lat": -19.0154, "lon": 29.1549 } },
+        { "name": "Burkina Faso", "coord": { "lat": 12.2383, "lon": -1.5616 } },
+        { "name": "Cabo Verde", "coord": { "lat": 16.5388, "lon": -23.0418 } },
+        { "name": "Gambia", "coord": { "lat": 13.4432, "lon": -15.3101 } },
+        { "name": "Ghana", "coord": { "lat": 7.9465, "lon": -1.0232 } },
+        { "name": "Liberia", "coord": { "lat": 6.4281, "lon": -9.4295 } },
+        { "name": "Mali", "coord": { "lat": 17.5707, "lon": -3.9962 } },
+        { "name": "Mauritania", "coord": { "lat": 21.0079, "lon": -10.9408 } },
+        { "name": "Niger", "coord": { "lat": 17.6078, "lon": 8.0817 } },
+        { "name": "Nigeria", "coord": { "lat": 9.082, "lon": 8.6753 } },
+        { "name": "Angola", "coord": { "lat": -11.2027, "lon": 17.8739 } },
+        { "name": "Central African Republic", "coord": { "lat": 6.6111, "lon": 20.9394 } },
+        { "name": "Chad", "coord": { "lat": 15.4542, "lon": 18.7322 } },
+        { "name": "DR Congo", "coord": { "lat": -4.0383, "lon": 21.7587 } },
+        { "name": "Gabon", "coord": { "lat": -0.8037, "lon": 11.6094 } }
+    ]
+}

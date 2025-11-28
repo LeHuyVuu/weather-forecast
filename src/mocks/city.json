@@ -1,0 +1,49 @@
+{
+    "message": "accurate",
+    "cod": "200",
+    "count": 1,
+    "list": [
+        {
+            "id": 1562822,
+            "name": "Socialist Republic of Vietnam",
+            "coord": {
+                "lat": 16.1667,
+                "lon": 107.8333
+            },
+            "main": {
+                "temp": 284.13,
+                "feels_like": 283.89,
+                "temp_min": 284.13,
+                "temp_max": 284.13,
+                "pressure": 1023,
+                "humidity": 100,
+                "sea_level": 1023,
+                "grnd_level": 978
+            },
+            "dt": 1742386187,
+            "wind": {
+                "speed": 0.53,
+                "deg": 269
+            },
+            "sys": {
+                "country": "VN"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 100
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04n"
+                }
+            ]
+        }
+    ]
+}
+
+
+

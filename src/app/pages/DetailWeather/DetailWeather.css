@@ -1,0 +1,51 @@
+
+@keyframes move {
+    0% {
+        transform: translateX(130px);
+    }
+
+    50% {
+        transform: translateX(140px);
+    }
+
+    100% {
+        transform: translateX(130px);
+    }
+}
+
+.detailrow:hover {
+    transform: translateX(20px);
+}
+.detailrow {
+    /* animation: move 2s infinite; */
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contentcontainer {
+
+    .leftcontent {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .rightcontent {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .leftcontent {
+            width: 100%;
+            transform: rotateY(0deg)
+        }
+
+        .rightcontent {
+            width: 100%;
+            transform: rotateY(0deg)
+        }
+    }
+}

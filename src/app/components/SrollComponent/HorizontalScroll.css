@@ -1,0 +1,61 @@
+.scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Ẩn phần thừa của nội dung */
+  }
+  
+  .scroll-content {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    scroll-behavior: smooth; /* Cuộn mượt mà */
+    gap: 20px;
+    padding: 0 50px; /* Thêm khoảng cách 2 bên cho nội dung */
+  }
+  
+  .item {
+    min-width: 200px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; /* Không có nền */
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    color: #333; /* Màu sắc icon */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  /* Thêm hiệu ứng khi hover */
+  .arrow:hover {
+    transform: translateY(-50%) scale(1.2); /* Phóng to mũi tên khi hover */
+    color: #1a73e8; /* Đổi màu khi hover */
+  }
+  
+  /* Tạo hiệu ứng mờ khi nút mũi tên bị vô hiệu hóa */
+  .arrow:disabled {
+    opacity: 0.5; /* Làm mờ mũi tên khi không thể bấm */
+    cursor: not-allowed; /* Đổi con trỏ thành "không cho phép" */
+  }
+  
