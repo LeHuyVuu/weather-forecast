@@ -8,6 +8,11 @@ import { sSelection } from "../../context/store";
 import Loading from "../LoadingComponent/Loading";
 import { openWeatherAPI, ipGeolocationAPI, temperatureUtils } from "../../../config/api.config";
 
+// Import weather background images
+import sunnyBg from "../../assets/carousel/sunny.avif";
+import cloudyBg from "../../assets/carousel/cloudy.avif";
+import rainnyBg from "../../assets/carousel/rainny.avif";
+
 const WeatherCarousel = ({ onScrollWorldWeather, onScrollNews }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -15,6 +20,26 @@ const WeatherCarousel = ({ onScrollWorldWeather, onScrollNews }) => {
 
   const convertKelvinToCelsius = useCallback((kelvin) => {
     return temperatureUtils.kelvinToCelsius(kelvin);
+  }, []);
+
+  // Function to get background image based on weather condition
+  const getWeatherBackground = useCallback((weatherMain) => {
+    if (!weatherMain) return sunnyBg; // Default to sunny
+    
+    const condition = weatherMain.toLowerCase();
+    
+    // Rain conditions
+    if (condition.includes('rain') || condition.includes('drizzle') || condition.includes('thunderstorm')) {
+      return rainnyBg;
+    }
+    // Cloudy conditions
+    else if (condition.includes('cloud') || condition.includes('mist') || condition.includes('fog') || condition.includes('haze')) {
+      return cloudyBg;
+    }
+    // Clear/Sunny conditions
+    else {
+      return sunnyBg;
+    }
   }, []);
 
   const formatTime = (timestamp) => {
@@ -147,7 +172,7 @@ const WeatherCarousel = ({ onScrollWorldWeather, onScrollNews }) => {
             className={`item absolute inset-0 bg-cover bg-center transition-all duration-[1000ms] ease-in-out ${0 === activeIndex ? "active" : "opacity-0"}`}
             style={{
 
-                backgroundImage: `url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/06/anh-mat-troi.jpg')`,  // Use the correct relative path to the image
+                backgroundImage: `url(${getWeatherBackground(sLocation.value.current?.weather?.[0]?.main)})`,
                 filter: "brightness(0.8)", // Apply brightness filter
             }}
             
@@ -157,17 +182,20 @@ const WeatherCarousel = ({ onScrollWorldWeather, onScrollNews }) => {
               {/* Left Side - Main Weather Info */}
               <div className="content-1 flex-1 flex flex-col justify-end text-white mb-6 sm:mb-8 lg:mb-0">
                 {/* tên nước */}
-                <p className="flex uppercase tracking-[3px] xs:tracking-[5px] sm:tracking-[10px] md:tracking-[15px] text-sm xs:text-base sm:text-xl md:text-3xl lg:text-6xl">
-                  {sLocation.value.countryName} 
-                   <span className="w-20 h-20 mr-2">
-                   <img 
-                     className="w-30 h-16" 
-                     src={openWeatherAPI.getFlagUrl(sLocation.value.code.toLowerCase())} 
-                     alt={`${sLocation.value.countryName} flag`} 
-                     style={{ borderRadius: '8px' }}
-                   />
-                   </span>
-                </p>
+                <div className="flex items-end gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <p className="uppercase tracking-[3px] xs:tracking-[5px] sm:tracking-[10px] md:tracking-[15px] text-sm xs:text-base sm:text-xl md:text-3xl lg:text-6xl font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    {sLocation.value.countryName}
+                  </p>
+                  <div className="relative mb-1 sm:mb-2 lg:mb-3 group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 rounded blur-sm group-hover:blur-md transition-all duration-300"></div>
+                    <img 
+                      className="relative w-6 h-4 sm:w-8 sm:h-6 md:w-10 md:h-7 lg:w-12 lg:h-8 object-cover rounded shadow-[0_2px_10px_rgba(0,0,0,0.5)] border-2 border-white/70 group-hover:border-white group-hover:shadow-[0_4px_20px_rgba(255,255,255,0.3)] group-hover:scale-105 transition-all duration-300" 
+                      src={`https://flagcdn.com/w80/${sLocation.value.code.toLowerCase()}.png`}
+                      alt={`${sLocation.value.countryName} flag`}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
 
                 {/* nhiệt độ */}
                 <div className="flex gap-2 sm:gap-3 md:gap-6 mt-2 sm:mt-4">

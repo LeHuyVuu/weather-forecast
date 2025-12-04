@@ -24,8 +24,13 @@ export const openWeatherAPI = {
    * @param {string} query - City name to search
    * @returns {string} API endpoint URL
    */
-  searchCity: (query) => 
-    `${API_DOMAINS.openWeather}/find?q=${query}&appid=${API_KEYS.openWeather}`,
+  searchCity: (query) => {
+    // Có thể dùng proxy nếu muốn ẩn API key (optional)
+    const isDevelopment = import.meta.env.DEV;
+    return isDevelopment
+      ? `${API_DOMAINS.openWeather}/find?q=${query}&appid=${API_KEYS.openWeather}`
+      : `/api/weather?type=search&q=${query}`;
+  },
   
   /**
    * Get weather forecast by coordinates
@@ -33,8 +38,13 @@ export const openWeatherAPI = {
    * @param {number} lon - Longitude
    * @returns {string} API endpoint URL
    */
-  getForecast: (lat, lon) => 
-    `${API_DOMAINS.openWeather}/onecall?lat=${lat}&lon=${lon}&appid=${API_KEYS.openWeather}`,
+  getForecast: (lat, lon) => {
+    // Có thể dùng proxy nếu muốn ẩn API key (optional)
+    const isDevelopment = import.meta.env.DEV;
+    return isDevelopment
+      ? `${API_DOMAINS.openWeather}/onecall?lat=${lat}&lon=${lon}&appid=${API_KEYS.openWeather}`
+      : `/api/weather?type=forecast&lat=${lat}&lon=${lon}`;
+  },
   
   /**
    * Get weather icon URL
@@ -59,16 +69,26 @@ export const ipGeolocationAPI = {
    * Get user's IP address
    * @returns {string} API endpoint URL
    */
-  getIP: () => 
-    `${API_DOMAINS.ipGeolocation}/getip`,
+  getIP: () => {
+    // Sử dụng Vercel Serverless Function khi deploy
+    const isDevelopment = import.meta.env.DEV;
+    return isDevelopment 
+      ? `${API_DOMAINS.ipGeolocation}/getip`
+      : '/api/getip';
+  },
   
   /**
    * Get location data by IP address
    * @param {string} ip - IP address
    * @returns {string} API endpoint URL
    */
-  getLocationByIP: (ip) => 
-    `${API_DOMAINS.ipGeolocation}/ipgeo?apiKey=${API_KEYS.ipGeolocation}&ip=${ip}`,
+  getLocationByIP: (ip) => {
+    // Sử dụng Vercel Serverless Function khi deploy
+    const isDevelopment = import.meta.env.DEV;
+    return isDevelopment
+      ? `${API_DOMAINS.ipGeolocation}/ipgeo?apiKey=${API_KEYS.ipGeolocation}&ip=${ip}`
+      : `/api/ipgeo?ip=${ip}`;
+  },
 };
 
 // Google Maps Configuration
