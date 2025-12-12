@@ -1,49 +1,35 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import WeatherCarousel from "../../components/components/WeatherCarousel";
 import WorldWeather from "../../components/components/WorldWeather";
 import WeatherNews from "../../components/components/WeatherNews";
+import SEOHead from "../../../components/SEO/SEOHead";
+import { generateMetaTags, generateOrganizationStructuredData, generateWebSiteStructuredData, SEO_CONFIG } from "../../../utils/seo";
 
 const HomePage = () => {
   const worldWeatherRef = useRef(null);
   const newsRef = useRef(null);
-//   const [scrollPosition, setScrollPosition] = useState(0);
-//   const [activeSection, setActiveSection] = useState("carousel");
 
-  // Scroll handler functions
-  //   const scrollToWorldWeather = () => {
-  //       worldWeatherRef.current.scrollIntoView({ behavior: "smooth" });
-  //   };
+  // Generate SEO meta tags
+  const seoData = generateMetaTags({
+    title: SEO_CONFIG.defaultTitle,
+    description: SEO_CONFIG.defaultDescription,
+    keywords: SEO_CONFIG.defaultKeywords,
+    url: SEO_CONFIG.siteUrl,
+  });
 
-  // const scrollToNews = () => {
-  //   newsRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
-
-  // Track scroll position to add active stat// es
-  // useEffect(() =>//    {
-  //   const handleScroll = () => {//     
-  //     setScrollPosition(window.scrollY);
-
-  //     // Update active section based on scroll position
-  //     if (worldWeatherRef.current && newsRef.current) {
-  //       const worldWeatherPosition = worldWeatherRef.current.offsetTop - 100;
-  //       const newsPosition = newsRef.current.offsetTop - 100;
-
-  //       if (scrollPosition >= newsPosition) {
-  //         setActiveSection("news");
-  //       } else if (scrollPosition >= worldWeatherPosition) {
-  //         setActiveSection("worldWeather");
-  //       } else {
-  //         setActiveSection("carousel");
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, [scrollPosition]);
+  // Generate structured data
+  const structuredData = [
+    generateWebSiteStructuredData(),
+    generateOrganizationStructuredData()
+  ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-blue-50 to-white">
+    <>
+      <SEOHead
+        {...seoData}
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen w-full bg-gradient-to-b from-blue-50 to-white">
       {/* Fixed Navigation */}
       {/* <div className="fixed top-6 right-6 z-50 flex gap-2">
         <button
@@ -161,6 +147,7 @@ const HomePage = () => {
       </div> */}
       {/* <sLocation.DevTool name="abc"/> */}
     </div>
+    </>
   );
 };
 

@@ -4,7 +4,64 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Forecast</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Weather Forecast - Real-time Weather Updates & 7-Day Forecast</title>
+  <meta name="title" content="Weather Forecast - Real-time Weather Updates & 7-Day Forecast" />
+  <meta name="description" content="Get accurate real-time weather forecasts, 7-day weather predictions, interactive 3D Earth globe, and world weather maps. Check temperature, humidity, wind speed, and more for any location worldwide." />
+  <meta name="keywords" content="weather forecast, real-time weather, weather prediction, 7-day forecast, weather map, temperature, humidity, wind speed, weather globe, world weather" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="1 days" />
+  <meta name="author" content="Weather Forecast Team" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://weather.boversal.id.vn/" />
+  <meta property="og:title" content="Weather Forecast - Real-time Weather Updates & 7-Day Forecast" />
+  <meta property="og:description" content="Get accurate real-time weather forecasts, 7-day weather predictions, interactive 3D Earth globe, and world weather maps." />
+  <meta property="og:image" content="https://weather.boversal.id.vn/og-image.jpg" />
+  <meta property="og:site_name" content="Weather Forecast" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://weather.boversal.id.vn/" />
+  <meta property="twitter:title" content="Weather Forecast - Real-time Weather Updates & 7-Day Forecast" />
+  <meta property="twitter:description" content="Get accurate real-time weather forecasts, 7-day weather predictions, interactive 3D Earth globe, and world weather maps." />
+  <meta property="twitter:image" content="https://weather.boversal.id.vn/og-image.jpg" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://weather.boversal.id.vn/" />
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- DNS Prefetch for Performance -->
+  <link rel="dns-prefetch" href="https://api.openweathermap.org" />
+  <link rel="preconnect" href="https://api.openweathermap.org" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#3b82f6" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Weather Forecast",
+    "url": "https://weather.boversal.id.vn",
+    "description": "Real-time weather forecasts and predictions for locations worldwide",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://weather.boversal.id.vn/detail-weather?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="root"></div>

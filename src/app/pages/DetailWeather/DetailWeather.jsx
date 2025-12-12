@@ -8,6 +8,8 @@ import RightBar from './partials/RightBar.jsx';
 import useFetch from '../../hooks/useFetch.jsx';
 import api from '../../../settings/api.jsx';
 import { sLocation } from '../../context/store.js';
+import SEOHead from '../../../components/SEO/SEOHead';
+import { generateMetaTags, generateWeatherStructuredData, generateBreadcrumbStructuredData, SEO_CONFIG } from '../../../utils/seo';
 
 import './DetailWeather.css';
 import axios from 'axios';
@@ -25,6 +27,37 @@ export default function DetailWeather() {
   const lat = searchParams.get('lat');
   const lon = searchParams.get('lon');
   const data = sLocation.use();
+
+  // Generate dynamic SEO data
+  const locationName = search || data.countryName || 'Unknown Location';
+  const weatherDesc = data.current?.weather?.[0]?.description || 'weather information';
+  const temp = data.current?.temp ? `${Math.round(data.current.temp)}°C` : '';
+  
+  const seoData = generateMetaTags({
+    title: `Weather in ${locationName} ${temp} - Real-time Forecast & 7-Day Prediction`,
+    description: `Check current weather in ${locationName}: ${weatherDesc}. Get detailed 7-day forecast, temperature, humidity, wind speed, and more. Interactive 3D Earth view with real-time weather data.`,
+    keywords: `weather ${locationName}, ${locationName} weather forecast, ${locationName} temperature, ${locationName} humidity, weather prediction ${locationName}`,
+    url: `${SEO_CONFIG.siteUrl}/detail-weather?search=${encodeURIComponent(locationName)}&lat=${lat}&lon=${lon}`,
+    type: 'article',
+    image: data.current?.weather?.[0]?.icon 
+      ? `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png`
+      : SEO_CONFIG.defaultImage
+  });
+
+  // Generate structured data for weather
+  const weatherStructuredData = generateWeatherStructuredData({
+    lat: lat || data.lat,
+    lon: lon || data.lon,
+  }, locationName);
+
+  // Generate breadcrumb structured data
+  const breadcrumbData = generateBreadcrumbStructuredData([
+    { name: 'Home', url: SEO_CONFIG.siteUrl },
+    { name: 'Weather Detail', url: `${SEO_CONFIG.siteUrl}/detail-weather` },
+    { name: locationName, url: `${SEO_CONFIG.siteUrl}/detail-weather?search=${encodeURIComponent(locationName)}` }
+  ]);
+
+  const structuredData = [weatherStructuredData, breadcrumbData].filter(Boolean);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -73,7 +106,12 @@ export default function DetailWeather() {
   }, [lat, lon, search, data.countryName]);
 
   return (
-    <div className="relative bg-cover bg-center min-h-screen" style={{ backgroundImage: 'url("https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?cs=srgb&dl=pexels-felixmittermeier-1146134.jpg&fm=jpg")' }}>
+    <>
+      <SEOHead
+        {...seoData}
+        structuredData={structuredData}
+      />
+      <div className="relative bg-cover bg-center min-h-screen" style={{ backgroundImage: 'url("https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?cs=srgb&dl=pexels-felixmittermeier-1146134.jpg&fm=jpg")' }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="mx-auto py-20 px-4 relative z-10">
@@ -97,5 +135,6 @@ export default function DetailWeather() {
         </div>
       </div>
     </div>
+    </>
   );
 }

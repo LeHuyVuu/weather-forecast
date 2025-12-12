@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://weather.boversal.id.vn/</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Weather Forecast Page -->
+  <url>
+    <loc>https://weather.boversal.id.vn/weather-forecast</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Detail Weather Page (generic) -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vietnam -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Vietnam</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Ho Chi Minh City -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Ho%20Chi%20Minh%20City</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hanoi -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Hanoi</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Da Nang -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Da%20Nang</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nha Trang -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Nha%20Trang</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hue -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Hue</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Can Tho -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Can%20Tho</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tokyo -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Tokyo</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Seoul -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Seoul</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Bangkok -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Bangkok</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Singapore -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Singapore</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Beijing -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Beijing</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Shanghai -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Shanghai</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hong Kong -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Hong%20Kong</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Manila -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Manila</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Jakarta -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Jakarta</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Kuala Lumpur -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Kuala%20Lumpur</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- New York -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=New%20York</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Los Angeles -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Los%20Angeles</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- San Francisco -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=San%20Francisco</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Chicago -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Chicago</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Miami -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Miami</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Toronto -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Toronto</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mexico City -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Mexico%20City</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- São Paulo -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=S%C3%A3o%20Paulo</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- London -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=London</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Paris -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Paris</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Berlin -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Berlin</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rome -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Rome</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Madrid -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Madrid</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amsterdam -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Amsterdam</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Barcelona -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Barcelona</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sydney -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Sydney</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Melbourne -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Melbourne</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Auckland -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Auckland</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Dubai -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Dubai</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cairo -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Cairo</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cape Town -->
+  <url>
+    <loc>https://weather.boversal.id.vn/detail-weather?search=Cape%20Town</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
